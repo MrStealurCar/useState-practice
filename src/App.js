@@ -8,6 +8,7 @@ import DropdownBar from "./dropdown";
 import PasswordConfirmation from "./password";
 import CharCount from "./inputCount";
 import FavoriteColor from "./favColor";
+import SimpleForm from "./form";
 function App() {
   return (
     <div className="App">
@@ -33,11 +34,13 @@ function App() {
       <h2>Password Confirmer:</h2>
       <PasswordConfirmation />
       <br />
-      <h2>Character count</h2>
+      <h2>Character count:</h2>
       <CharCount />
       <br />
-      <h2>Favorite Color</h2>
+      <h2>Favorite Color:</h2>
       <FavoriteColor />
+      <h2>Simple Form:</h2>
+      <SimpleForm />
     </div>
   );
 }
