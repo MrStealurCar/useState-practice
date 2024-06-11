@@ -1,5 +1,4 @@
 import "./App.css";
-import "./App.css";
 import Counter from "./counter";
 import NameSetter from "./name";
 import ToggleVisibility from "./visibility";
