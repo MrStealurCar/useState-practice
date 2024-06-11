@@ -8,7 +8,7 @@ import UppercaseConverter from "./uppercase";
 import DropdownBar from "./dropdown";
 import PasswordConfirmation from "./password";
 import CharCount from "./inputCount";
-
+import FavoriteColor from "./favColor";
 function App() {
   return (
     <div className="App">
@@ -36,6 +36,9 @@ function App() {
       <br />
       <h2>Character count</h2>
       <CharCount />
+      <br />
+      <h2>Favorite Color</h2>
+      <FavoriteColor />
     </div>
   );
 }
