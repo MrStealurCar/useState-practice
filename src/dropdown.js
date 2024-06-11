@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 
 export default function DropdownBar() {
-  const [selectedValue, setSelectedValue] = useState("");
+  const [selectedValue, setSelectedValue] = useState(null);
 
   const handleEvent = (event) => {
     setSelectedValue(event.target.value);
