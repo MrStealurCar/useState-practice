@@ -13,6 +13,7 @@ export default function PasswordConfirmation() {
     setConfirmPassword(event.target.value);
   };
 
+  const passwordsNotEmpty = password !== "" && confirmPassword !== "";
   const matchingPasswords = password === confirmPassword;
 
   return (
@@ -30,10 +31,11 @@ export default function PasswordConfirmation() {
         onChange={handlePasswordConfirmation}
         placeholder="Confirm Password"
       ></input>
-      {matchingPasswords ? (
-        <h3>Passwords match</h3>
-      ) : (
-        <h3>Passwords do not match</h3>
+
+      {passwordsNotEmpty && (
+        <h3>
+          {matchingPasswords ? "Passwords match" : "Passwords do not match"}
+        </h3>
       )}
     </div>
   );
